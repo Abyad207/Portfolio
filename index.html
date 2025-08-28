@@ -2,197 +2,219 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Afiat Khan | Civil & Transportation Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header class="hero">
+
+  <!-- Top Nav -->
+  <header class="topbar">
     <div class="container">
-      <h1 class="hero-title">AFIAT KHAN</h1>
-      <p class="hero-subtitle">Civil & Transportation Engineer</p>
-      <div class="hero-contact">
-        <a href="mailto:afiat.khan11@gmail.com" class="btn">Email Me</a>
-        <a href="http://www.linkedin.com/in/afiatkhan" target="_blank" class="btn">LinkedIn</a>
-      </div>
+      <a href="#home" class="brand">AFIAT KHAN</a>
+      <nav class="nav">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open Menu" id="navToggle">☰</button>
     </div>
   </header>
 
-  <!-- About -->
-  <section class="section about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I am a Civil Engineer specializing in transportation and municipal design, with experience delivering roadway, transit, and infrastructure projects. I bring expertise in AutoCAD, Civil 3D, and transportation analysis tools, and I am passionate about building safe, sustainable, and efficient communities.
-      </p>
+  <!-- Mobile Drawer -->
+  <nav class="drawer" id="drawer">
+    <a href="#experience" class="drawer-link">Experience</a>
+    <a href="#projects" class="drawer-link">Projects</a>
+    <a href="#skills" class="drawer-link">Skills</a>
+    <a href="#education" class="drawer-link">Education</a>
+    <a href="#contact" class="drawer-link">Contact</a>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h1 class="hero-title">Civil & Transportation Engineer</h1>
+        <p class="hero-tag">
+          Municipal design · Transportation engineering · Project coordination
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://drive.google.com/file/d/1i8kTyMhIKN1iCff3-UZyLHjZ7pEmAj8v/view?usp=sharing" target="_blank" rel="noopener">
+            Download CV
+          </a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/afiatkhan" target="_blank" rel="noopener">
+            LinkedIn
+          </a>
+        </div>
+        <div class="hero-contact">
+          <a href="mailto:afiat.khan11@gmail.com">afiat.khan11@gmail.com</a> ·
+          <a href="tel:+16474490504">(647) 449-0504</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- Replace with your image at this path -->
+        <img src="images/afiat.jpg" alt="Portrait of Afiat Khan" class="hero-photo" />
+      </div>
     </div>
   </section>
 
   <!-- Experience -->
-  <section class="section-alt">
+  <section id="experience" class="section">
     <div class="container">
-      <h2>Experience</h2>
-      <div class="experience-item">
-        <h3>Municipal Designer</h3>
-        <p><strong>WalterFedy | 2023 – Present</strong></p>
-        <ul>
-          <li>Designed municipal infrastructure projects including roadways and sewer systems.</li>
-          <li>Prepared technical drawings and coordinated with multidisciplinary teams.</li>
-          <li>Ensured compliance with municipal and provincial engineering standards.</li>
+      <h2 class="section-title">Experience</h2>
+
+      <article class="exp-card">
+        <div class="exp-meta">
+          <h3>Municipal Designer / Project Coordinator</h3>
+          <p class="exp-org">Chisholm Fleming & Associates · Jan 2025 – Present</p>
+        </div>
+        <ul class="exp-list">
+          <li>Coordinated schedules, deliverables, and resources in alignment with contracts, municipal standards, and stakeholder policies within budgets and timelines.</li>
+          <li>Prepared and monitored budgets via estimates, CBA, contract reviews, and variance analysis to meet financial objectives.</li>
+          <li>Supported procurement: drafted requisitions, RFPs/RFQs/REOIs, and developed contract specifications per municipal guidelines.</li>
+          <li>Conducted site inspections, construction reviews, and assessments; delivered reports with evidence-based recommendations to mitigate risk and ensure compliance.</li>
+          <li>Maintained project controls (change logs, risk registers, QA/QC) and coordinated teams via minutes/action tracking.</li>
         </ul>
-      </div>
-      <div class="experience-item">
-        <h3>Graduate Transportation Engineer</h3>
-        <p><strong>WSP | 2022 – 2023</strong></p>
-        <ul>
-          <li>Supported transportation planning and traffic operations projects.</li>
-          <li>Performed traffic analysis using Synchro and prepared reports for clients.</li>
-          <li>Collaborated with senior engineers to develop solutions improving road safety.</li>
+      </article>
+
+      <article class="exp-card">
+        <div class="exp-meta">
+          <h3>Graduate Transportation Engineer</h3>
+          <p class="exp-org">Mott MacDonald · May 2023 – Dec 2024</p>
+        </div>
+        <ul class="exp-list">
+          <li>Produced 2D/3D designs in AutoCAD & Civil 3D (alignments, profiles, swept-path), station packages (grading, bus terminals, roadway modifications).</li>
+          <li>Assisted PMs with utility relocations, detours, and traffic control plans; coordinated interdisciplinary reviews to improve constructability.</li>
+          <li>Prepared technical reports, progress documentation, and permit drawings; aligned with milestones and transportation requirements.</li>
+          <li>Supported cost–benefit analyses to guide budgets and optimize design solutions.</li>
         </ul>
-      </div>
-      <div class="experience-item">
-        <h3>Project Coordinator (Student)</h3>
-        <p><strong>Metrolinx | 2021 – 2022</strong></p>
-        <ul>
-          <li>Assisted project managers with schedules, budgets, and reports.</li>
-          <li>Reviewed technical submissions for transportation projects.</li>
-          <li>Ensured documentation integrity and compliance with project standards.</li>
+      </article>
+
+      <article class="exp-card">
+        <div class="exp-meta">
+          <h3>Student Project Coordinator (Co-op)</h3>
+          <p class="exp-org">Amico Infrastructures Inc. · Sept 2021 – Apr 2022</p>
+        </div>
+        <ul class="exp-list">
+          <li>Supported PMs in schedules, budgets, and progress reporting for the Ontario Line; ensured milestone tracking and budget compliance.</li>
+          <li>Managed scope/design changes via change logs and interdisciplinary reviews to minimize delays.</li>
+          <li>Prepared technical reports, design submissions, and permit applications per municipal regulations and standards.</li>
+          <li>Coordinated meetings: agendas, minutes, action items to improve communication and delivery.</li>
         </ul>
-      </div>
+      </article>
     </div>
   </section>
 
   <!-- Projects -->
-  <section class="section projects">
+  <section id="projects" class="section section-alt">
     <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Road Safety Intersection Redesign</h3>
-          <p>Redesigned a high-collision intersection to improve pedestrian and driver safety.</p>
-        </div>
-        <div class="project-card">
-          <h3>ConstructR App</h3>
-          <p>Developed a student-led app to streamline construction project communication.</p>
-        </div>
-        <div class="project-card">
-          <h3>Municipal Infrastructure Drawings</h3>
-          <p>Created AutoCAD Civil 3D designs for sewer, watermain, and roadway projects.</p>
-        </div>
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>ConstructR · Amico Infrastructures Inc.</h3>
+          <p>Partnered with IT to shape a construction software/mobile app for tracking material movements, drivers, and payments—reducing manual time and cost.</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Intersection Safety & Capacity Study</h3>
+          <p>Performed in-service road analysis and field reviews to propose long-term alternatives accommodating demand and improving safety for a pre-existing intersection in the Niagara Region.</p>
+          <ul class="project-bullets">
+            <li>Evaluated crash reports, turning counts, and signal timing; reviewed underground utilities and environmental impacts.</li>
+            <li>Developed Synchro/AutoCAD design options aligned with the Niagara Region Complete Streets Guidelines.</li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Education -->
-  <section class="section-alt">
-    <div class="container">
-      <h2>Education</h2>
-      <p><strong>Bachelor of Engineering (B.Eng.), Civil Engineering</strong></p>
-      <p>Toronto Metropolitan University – 2023</p>
-      <p>Specialization in Transportation Engineering</p>
-    </div>
-  </section>
-
- <!-- Skills -->
-<section class="section skills">
-    <div class="container">
-      <h2>Skills</h2>
-<div class="skill-card">
-      <img src="images/Autocad.png">
-      <div class="card-content">
-        <h3>AutoCAD & Civil 3D</h3>
-      </div>
-    </div>
-
- <!-- Skill Card 2 -->
-    <div class="skill-card">
-      <img src="images/synchro.png">
-      <div class="card-content">
-        <h3>Synchro</h3>
-      </div>
-    </div>
-
- <!-- Skill Card 3 -->
-    <div class="skill-card">
-      <img src="images/Project Management.png">
-      <div class="card-content">
-        <h3>Project Management</h3>
-      </div>
-    </div>
-
- <!-- Skill Card 4 -->
-    <div class="skill-card">
-      <img src="images/MS Office.png">
-      <div class="card-content">
-        <h3>Microsoft Office Suite</h3>
-      </div>
-    </div>
-
-
-       <!-- Skill Card 5 -->
-    <div class="skill-card">
-      <img src="images/Transportation.png">
-      <div class="card-content">
-        <h3>Transportation Analysis</h3>
-      </div>
-    </div>
-
-       <!-- Skill Card 6 -->
-    <div class="skill-card">
-      <img src="images/CAPM.png">
-      <div class="card-content">
-        <h3>CAPM (in progress)</h3>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-      
   <!-- Skills -->
-  <section class="section skills">
+  <section id="skills" class="section">
     <div class="container">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>AutoCAD & Civil 3D</li>
-        <li>Synchro</li>
-        <li>Project Management</li>
-        <li>Microsoft Office Suite</li>
-        <li>Transportation Analysis</li>
-        <li>CAPM (in progress)</li>
+      <h2 class="section-title">Skills</h2>
+
+      <!-- Icon row (small logos) -->
+      <div class="skill-icons">
+        <div class="skill-icon">
+          <img src="images/icons/autocad.svg" alt="AutoCAD" />
+          <span>AutoCAD</span>
+        </div>
+        <div class="skill-icon">
+          <img src="images/icons/civil3d.svg" alt="Civil 3D" />
+          <span>Civil 3D</span>
+        </div>
+        <div class="skill-icon">
+          <img src="images/icons/synchro.svg" alt="Synchro" />
+          <span>Synchro</span>
+        </div>
+        <div class="skill-icon">
+          <img src="images/icons/ms-office.svg" alt="Microsoft Office" />
+          <span>Microsoft Office</span>
+        </div>
+        <div class="skill-icon">
+          <img src="images/icons/pm.svg" alt="Project Management" />
+          <span>Project Management</span>
+        </div>
+        <div class="skill-icon">
+          <img src="images/icons/capm.svg" alt="CAPM" />
+          <span>CAPM (in progress)</span>
+        </div>
+      </div>
+
+      <!-- Pills -->
+      <ul class="skills-pills">
+        <li>Municipal Design</li>
+        <li>Transportation Engineering</li>
+        <li>Traffic Control Plans</li>
+        <li>Utility Coordination</li>
+        <li>Reports & Permits</li>
+        <li>Risk & Change Logs</li>
       </ul>
     </div>
   </section>
 
-   <section id="resume" class="section">
-  <h2 class="section-title">My Resume</h2>
+  <!-- Education -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-card">
+        <h3>B.Eng., Civil Engineering (Transportation)</h3>
+        <p>Toronto Metropolitan University — Graduated May 2023</p>
+      </div>
+    </div>
+  </section>
 
-  <!-- Centered Download Link -->
-  <div class="resume-link">
-    <p>
-      View or 
-      <a href="https://drive.google.com/file/d/1i8kTyMhIKN1iCff3-UZyLHjZ7pEmAj8v/view?usp=sharing" target="_blank">
-        download
-      </a> 
-      my full resume here.
-    </p>
-  </div>
-</section>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <a class="contact-link" href="mailto:afiat.khan11@gmail.com">afiat.khan11@gmail.com</a>
+        <a class="contact-link" href="tel:+16474490504">(647) 449-0504</a>
+        <a class="contact-link" href="https://www.linkedin.com/in/afiatkhan" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Afiat Khan | Civil & Transportation Engineer</p>
+      <p>© 2025 Afiat Khan</p>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
+
 
