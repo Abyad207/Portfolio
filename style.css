@@ -78,7 +78,7 @@ h2 {
 
 /* Lists */
 ul {
-  list-style: rectangle;
+  list-style: disc;
   padding-left: 20px;
 }
 
