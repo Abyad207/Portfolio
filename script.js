@@ -1,27 +1,16 @@
-// Smooth scrolling for anchors
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
-  });
-});
+// Smooth fade-in animations
+const sections = document.querySelectorAll("section");
 
-// Fade-in scroll animation
-const elements = document.querySelectorAll('.section, .section-alt, .project-card, .skill-card, .hero');
-
-const observer = new IntersectionObserver((entries, obs) => {
+const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('fade-in');
-      obs.unobserve(entry.target);
+      entry.target.classList.add("visible");
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0.2 });
 
-elements.forEach(el => observer.observe(el));
-
-// Add fade-in animation styles in CSS if desired
+sections.forEach(section => {
+  section.classList.add("hidden");
+  observer.observe(section);
+});
 
