@@ -76,25 +76,36 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Lists */
-ul {
-  list-style: disc;
-  padding-left: 20px;
-}
-
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 12px;
+  justify-content: center; /* Center-aligns the buttons */
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .skills-list li {
   background: var(--cabernet);
   color: var(--vanilla);
-  padding: 8px 15px;
-  border-radius: 20px;
-  font-size: 0.9rem;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  white-space: nowrap; /* Prevents wrapping inside the button */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
+.skills-list li:hover {
+  background: var(--almond);
+  transform: scale(1.05);
+}
+
 
 /* Projects */
 .project-grid {
