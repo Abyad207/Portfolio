@@ -2,8 +2,8 @@
 :root{
   --bg: #ffffff;             /* white base */
   --text: #1b1b1b;           /* near-black text */
-  --muted: #f0d7ff;          /* gray-500 */
-  --subtle: #f3f4f6;         /* gray-100 (light section bg) */
+  --muted: #6b7280;          /* gray-500 */
+  --subtle: #f0d7ff;         /* gray-100 (light section bg) */
   --border: #e5e7eb;         /* gray-200 */
   --accent: #9D2235;         /* crimson accent */
   --accent-ink: #ffffff;     /* white text on crimson */
